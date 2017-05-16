@@ -15,8 +15,17 @@
       .box {
         height: 400px;
         width: 400px;
+        transition: width 4s ease-out 1s,
+                    height 2s ease-out 1s;
       }
-
+      body, html {
+        overflow: hidden;
+        height: 100%;
+      }
+      .box:hover {
+        height: 100%;
+        width: 100%;
+      }
     </style>
   </head>
   <body>
